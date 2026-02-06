@@ -426,55 +426,53 @@ section {
     border-bottom: 1px solid var(--charcoal);
 }
 
-.chef-content {
+.chef-member {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
     align-items: start;
+    margin-bottom: 2.5rem;
 }
 
 .chef-card {
     background: var(--navy-light);
     border: 1px solid var(--charcoal);
-    padding: 2.5rem;
+    padding: 1.5rem 2rem;
     text-align: center;
+    width: 200px;
 }
 
-.chef-avatar {
-    width: 80px;
-    height: 80px;
+.chef-photo {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background: var(--navy-mid);
     border: 2px solid var(--gold-dim);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-family: 'Young Serif', serif;
-    font-size: 1.8rem;
-    color: var(--gold);
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+.chef-alias {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-dim);
 }
 
 .chef-card h3 {
     font-family: 'Young Serif', serif;
     color: var(--cream);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
 
 .chef-card .chef-title {
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--gold-dim);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
-
-.chef-card .chef-bio {
-    font-size: 0.9rem;
-    color: var(--text-dim);
-    line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .chef-details p {
@@ -538,6 +536,12 @@ section {
 
 .partner-card:hover {
     border-color: var(--gold-dim);
+}
+
+.partner-logo {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .partner-label {
@@ -818,7 +822,8 @@ footer {
     .approach-visual { height: auto; position: relative; }
     .approach-step { position: relative !important; top: auto !important; left: auto !important; margin-bottom: 1.5rem; }
     .approach-visual::before { display: none; }
-    .chef-content { grid-template-columns: 1fr; }
+    .chef-member { grid-template-columns: 1fr; }
+    .chef-card { width: 100%; }
     .contact-grid { grid-template-columns: 1fr; }
     .menu-grid { grid-template-columns: 1fr; }
     .partner-grid { max-width: 100%; }
