@@ -46,3 +46,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Formspree AJAX submission with localized redirect
+const form = document.querySelector('form[action*="formspree.io"]');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+            if (response.ok) {
+                const lang = document.documentElement.lang || 'en';
+                window.location.href = '/' + lang + '/thank-you.html';
+            } else {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                alert('Something went wrong. Please try again.');
+            }
+        }).catch(function() {
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            alert('Something went wrong. Please try again.');
+        });
+    });
+}
