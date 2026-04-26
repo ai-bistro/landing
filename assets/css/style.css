@@ -1203,7 +1203,8 @@ section {
     height: 200px;
     border-radius: 50%;
     border: 2px solid var(--av-c, var(--gold-deep));
-    background: var(--bg-card-lift);
+    background-color: var(--bg-card-lift);
+    background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -1217,12 +1218,18 @@ section {
 .team-photo .avatar.c-gold  { --av-c: var(--gold-deep); }
 .team-photo .avatar.c-teal  { --av-c: var(--teal); }
 
-.team-photo .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
+/* Per-person crops — tuned so eye-line sits at ~35% from top of circle
+   with similar face prominence across both portraits. */
+.team-photo .avatar.nadya {
+    background-image: url('../img/nadya.png');
+    background-size: 135%;
+    background-position: 50% 25%;
+}
+
+.team-photo .avatar.andy {
+    background-image: url('../img/andrey.jpg');
+    background-size: 135%;
+    background-position: 40% 28%;
 }
 
 .team-photo .station-pill {
