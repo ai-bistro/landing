@@ -290,7 +290,7 @@
             <ul class="bullets">
                 <li>Izbira iz uradnega Microsoftovega kataloga tečajev</li>
                 <li>Korporativne skupine po meri v EN, SL ali RU</li>
-                <li>Javni tečaji v Ljubljani in Poreču</li>
+                <li>Javni tečaji v Ljubljani</li>
                 <li>Praktične vaje in podpora po končanem tečaju</li>
             </ul>
             <div class="tags">
@@ -359,120 +359,156 @@
 <section id="platform" class="reveal">
     <div style="margin-bottom: 64px;">
         <p class="kicker">NAŠA UI TEHNOLOŠKA PLATFORMA</p>
-        <h2 class="display">Zanesljiva, sodobna,<br>preverjena<span class="gd">.</span></h2>
+        <h2 class="display">Sodobna referenčna<br>arhitektura LLM<span class="gd">.</span></h2>
         <div class="italic-kicker">— <span class="script">the kitchen behind every dish.</span></div>
-        <p class="lead" style="margin-top:24px;">Bistveno krajši časi implementacije s stabilno, razširljivo osnovo. Ista platforma poganja naše rešitve za dokumente, agente in raziskave.</p>
+        <p class="lead" style="margin-top:24px;">Produkcijski AI na stabilni, razširljivi osnovi: zajem podatkov, inženiring konteksta, orkestracija modelov, strukturirani izhodi in dostava — vse zaviti v opazljivost, evalvacije in upravljanje.</p>
     </div>
 
-    <div class="pipeline">
-        <div class="pipeline-rail"></div>
-
-        <div class="pipeline-top">
+    <div class="arch">
+        <div class="arch-rail">
             <span class="gold">surov vhod →</span>
             <span class="dash"></span>
-            <span class="gold">→ končni izhod</span>
+            <span class="gold">→ strukturiran, validiran izhod</span>
         </div>
 
-        <div class="stations">
-            <div class="station c-rust">
-                <div class="station-card">
-                    <div class="station-head">
-                        <div class="row">
-                            <span class="stage-num">STOPNJA 01</span>
-                            <span class="components">6 KOMPONENT</span>
-                        </div>
-                        <div class="stage-name">Vhod</div>
-                        <div class="stage-kitchen">— oz. Mise en place</div>
+        <div class="arch-stages">
+            <div class="arch-stage c-rust">
+                <div class="arch-stage-head">
+                    <div class="row">
+                        <span class="num">01</span>
+                        <span class="count">6 KOMPONENT</span>
                     </div>
-                    <div class="station-items">
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Outlook Add-in</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">REST API</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">MS Exchange</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Browser Upload</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">S3 / SFTP</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Web Scraping</span></div>
-                    </div>
+                    <div class="name">Zajem podatkov</div>
+                    <div class="kitchen-sub">— oz. mise en place</div>
                 </div>
-                <div class="handoff">
-                    <div class="disk">1</div>
-                    <svg width="16" height="10" viewBox="0 0 16 10"><path d="M 11 2 L 15 5 L 11 8" stroke="#d4a64a" stroke-width="1.5" fill="none"/></svg>
+                <div class="arch-stage-items">
+                    <div class="arch-item"><span class="arr">›</span><span class="name">REST / GraphQL APIs</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">MS Exchange / Outlook</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">S3 / SFTP / Object Store</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Kafka / Event Streams</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Browser Upload</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Web Scraping</span></div>
                 </div>
+                <div class="arch-flow-arrow">›</div>
             </div>
 
-            <div class="station c-teal">
-                <div class="station-card">
-                    <div class="station-head">
-                        <div class="row">
-                            <span class="stage-num">STOPNJA 02</span>
-                            <span class="components">6 KOMPONENT</span>
-                        </div>
-                        <div class="stage-name">Predobdelava</div>
-                        <div class="stage-kitchen">— oz. Prep station</div>
+            <div class="arch-stage c-teal">
+                <div class="arch-stage-head">
+                    <div class="row">
+                        <span class="num">02</span>
+                        <span class="count">6 KOMPONENT</span>
                     </div>
-                    <div class="station-items">
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Rendering</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Parsing</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Embeddings</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Markdown</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Web Search</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Retrieval</span></div>
-                    </div>
+                    <div class="name">Inženiring konteksta</div>
+                    <div class="kitchen-sub">— oz. prep station</div>
                 </div>
-                <div class="handoff">
-                    <div class="disk">2</div>
-                    <svg width="16" height="10" viewBox="0 0 16 10"><path d="M 11 2 L 15 5 L 11 8" stroke="#d4a64a" stroke-width="1.5" fill="none"/></svg>
+                <div class="arch-stage-items">
+                    <div class="arch-item"><span class="arr">›</span><span class="name">OCR &amp; Doc Parsing</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Chunking &amp; Embeddings</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Vector Search · RAG</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Knowledge Graph</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Long-term Memory</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Prompt Management</span></div>
                 </div>
+                <div class="arch-flow-arrow">›</div>
             </div>
 
-            <div class="station c-rust">
-                <div class="station-card">
-                    <div class="station-head">
-                        <div class="row">
-                            <span class="stage-num">STOPNJA 03</span>
-                            <span class="components">4 KOMPONENTE</span>
-                        </div>
-                        <div class="stage-name">UI agenti</div>
-                        <div class="stage-kitchen">— oz. The hot line</div>
+            <div class="arch-stage c-rust">
+                <div class="arch-stage-head">
+                    <div class="row">
+                        <span class="num">03</span>
+                        <span class="count">6 KOMPONENT</span>
                     </div>
-                    <div class="heat-lamps"><span></span><span></span><span></span></div>
-                    <div class="station-items">
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Model Context</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Context Data</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Extraction</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Validation</span></div>
-                    </div>
+                    <div class="name">Modeli in orodja</div>
+                    <div class="kitchen-sub">— oz. the hot line</div>
                 </div>
-                <div class="handoff">
-                    <div class="disk">3</div>
-                    <svg width="16" height="10" viewBox="0 0 16 10"><path d="M 11 2 L 15 5 L 11 8" stroke="#d4a64a" stroke-width="1.5" fill="none"/></svg>
+                <div class="arch-stage-items">
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Claude · GPT · Open-source</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Multi-model Routing</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Tool Use · MCP</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Agent Orchestration</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Code Execution</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Caching &amp; Fallback</span></div>
                 </div>
+                <div class="arch-flow-arrow">›</div>
             </div>
 
-            <div class="station c-teal">
-                <div class="station-card">
-                    <div class="station-head">
-                        <div class="row">
-                            <span class="stage-num">STOPNJA 04</span>
-                            <span class="components">5 KOMPONENT</span>
-                        </div>
-                        <div class="stage-name">Poobdelava</div>
-                        <div class="stage-kitchen">— oz. The pass</div>
+            <div class="arch-stage c-teal">
+                <div class="arch-stage-head">
+                    <div class="row">
+                        <span class="num">04</span>
+                        <span class="count">5 KOMPONENT</span>
                     </div>
-                    <div class="station-items">
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Information</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Output: API</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Output: Email</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Output: Archive</span></div>
-                        <div class="station-item"><span class="arrow">›</span><span class="name">Custom Formats</span></div>
+                    <div class="name">Strukturirani izhodi</div>
+                    <div class="kitchen-sub">— oz. plating up</div>
+                </div>
+                <div class="arch-stage-items">
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Pydantic · JSON Schema</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Constrained Decoding</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Validation &amp; Repair</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">PII Boundary</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Citation Tracking</span></div>
+                </div>
+                <div class="arch-flow-arrow">›</div>
+            </div>
+
+            <div class="arch-stage c-rust">
+                <div class="arch-stage-head">
+                    <div class="row">
+                        <span class="num">05</span>
+                        <span class="count">5 KOMPONENT</span>
                     </div>
+                    <div class="name">Dostava</div>
+                    <div class="kitchen-sub">— oz. the pass</div>
+                </div>
+                <div class="arch-stage-items">
+                    <div class="arch-item"><span class="arr">›</span><span class="name">REST / Webhook</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Email / Outlook</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Message Queues</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Audit Trail / Archive</span></div>
+                    <div class="arch-item"><span class="arr">›</span><span class="name">Custom Formats</span></div>
                 </div>
             </div>
         </div>
 
-        <div class="pipeline-legend">
-            <span><span class="star">☆</span>&nbsp; ENA PLATFORMA · ŠTIRI STOPNJE · VSAK PROJEKT, KI GA GRADIMO</span>
-            <span class="credit">Zgrajeno in izpopolnjeno skupaj z našim partnerjem Aprova GmbH.</span>
+        <div class="arch-cross">
+            <div class="cell c-saffron">
+                <h5>Opazljivost</h5>
+                <div class="cell-sub">Vsak klic izsleden, vsak strošek spremljan.</div>
+                <div class="pills">
+                    <span class="pill">OpenTelemetry</span>
+                    <span class="pill">Traces &amp; Spans</span>
+                    <span class="pill">Latency</span>
+                    <span class="pill">Token Cost</span>
+                    <span class="pill">Dashboards</span>
+                    <span class="pill">Alerts</span>
+                </div>
+            </div>
+            <div class="cell c-olive">
+                <h5>Evalvacije</h5>
+                <div class="cell-sub">Je rešitev res dobra — in še naprej dobra?</div>
+                <div class="pills">
+                    <span class="pill">Golden Datasets</span>
+                    <span class="pill">LLM-as-judge</span>
+                    <span class="pill">Regression Tests</span>
+                    <span class="pill">Drift Detection</span>
+                    <span class="pill">Online Scoring</span>
+                    <span class="pill">Human Feedback</span>
+                </div>
+            </div>
+            <div class="cell c-gold">
+                <h5>Upravljanje in varnost</h5>
+                <div class="cell-sub">Pripravljeno na revizijo že privzeto.</div>
+                <div class="pills">
+                    <span class="pill">Data Residency</span>
+                    <span class="pill">Audit Logs</span>
+                    <span class="pill">RBAC</span>
+                    <span class="pill">PII Guardrails</span>
+                    <span class="pill">Compliance Hooks</span>
+                </div>
+            </div>
         </div>
+
+        <p class="arch-credit">Zgrajeno in izpopolnjeno skupaj z našim partnerjem Aprova GmbH.</p>
     </div>
 </section>
 
@@ -523,7 +559,7 @@
         <p class="kicker">URADNI MICROSOFTOVI TEČAJI</p>
         <h2 class="display">Uradni Microsoftovi tečaji<span class="gd">.</span></h2>
         <div class="italic-kicker">— <span class="script">delivered by certified trainers.</span></div>
-        <p class="lead" style="margin-top:24px;">Naša ekipa ima Microsoftove certifikate za trenerje (MCT). Izvajamo uradne Microsoftove tečaje za izpopolnjevanje vaših ekip na področju UI, podatkov in oblaka — javne skupine v Ljubljani in Poreču, zasebne korporativne skupine osebno ali oddaljeno, v angleškem, slovenskem ali ruskem jeziku.</p>
+        <p class="lead" style="margin-top:24px;">Naša ekipa ima Microsoftove certifikate za trenerje (MCT). Izvajamo uradne Microsoftove tečaje za izpopolnjevanje vaših ekip na področju UI, podatkov in oblaka — javne skupine v Ljubljani, zasebne korporativne skupine osebno ali oddaljeno, v angleškem, slovenskem ali ruskem jeziku.</p>
     </div>
     <div class="mct-grid">
         <article class="mct c-rust"><span class="code">AI-900</span><h4>Microsoft Azure AI Fundamentals</h4><p>Temeljno znanje o konceptih UI, NLP, računalniškem vidu in generativni UI na Azuru. Začetni certifikat.</p></article>
@@ -550,8 +586,10 @@
     <div class="team-grid">
         <article class="team-card">
             <div class="team-photo">
-                <img src="../assets/img/nadya.png" alt="Nadezda Vykhodtseva">
                 <span class="station-pill c-olive">front of house</span>
+                <div class="avatar c-olive">
+                    <img src="../assets/img/nadya.png" alt="Nadezda Vykhodtseva">
+                </div>
             </div>
             <div class="team-info">
                 <div class="alias c-olive">Nadya V.</div>
@@ -568,8 +606,10 @@
 
         <article class="team-card">
             <div class="team-photo">
-                <img src="../assets/img/andrey.jpg" alt="Andrey Vykhodtsev">
                 <span class="station-pill c-gold">at the pass</span>
+                <div class="avatar c-gold">
+                    <img src="../assets/img/andrey.jpg" alt="Andrey Vykhodtsev">
+                </div>
             </div>
             <div class="team-info">
                 <div class="alias c-gold">Andy V.</div>
@@ -582,41 +622,31 @@
                     <span class="tag">Data Science</span>
                     <span class="tag">Python</span>
                 </div>
-                <div class="creds">
-                    <div class="label">CERTIFIKATI</div>
-                    <div class="cred-pills">
-                        <span class="cred-pill">MCT</span>
-                        <span class="cred-pill">AI-900</span>
-                        <span class="cred-pill">AI-102</span>
-                        <span class="cred-pill">AI-050</span>
-                        <span class="cred-pill">DP-100</span>
-                        <span class="cred-pill">DP-203</span>
-                        <span class="cred-pill">DP-600</span>
-                    </div>
-                </div>
             </div>
         </article>
 
         <article class="team-card">
-            <div class="team-photo specialists-photo">
-                <svg width="120" height="120" viewBox="0 0 120 120" style="opacity:0.85;" aria-hidden="true">
-                    <circle cx="60" cy="60" r="14" fill="none" stroke="#d4a64a" stroke-width="1.5"/>
-                    <g stroke="#d4a64a" stroke-width="1.2" fill="#161310">
-                        <line x1="60" y1="60" x2="60" y2="22" stroke="#f0e9d820"/>
-                        <circle cx="60" cy="22" r="7"/>
-                        <line x1="60" y1="60" x2="92.91" y2="41" stroke="#f0e9d820"/>
-                        <circle cx="92.91" cy="41" r="7"/>
-                        <line x1="60" y1="60" x2="92.91" y2="79" stroke="#f0e9d820"/>
-                        <circle cx="92.91" cy="79" r="7"/>
-                        <line x1="60" y1="60" x2="60" y2="98" stroke="#f0e9d820"/>
-                        <circle cx="60" cy="98" r="7"/>
-                        <line x1="60" y1="60" x2="27.09" y2="79" stroke="#f0e9d820"/>
-                        <circle cx="27.09" cy="79" r="7"/>
-                        <line x1="60" y1="60" x2="27.09" y2="41" stroke="#f0e9d820"/>
-                        <circle cx="27.09" cy="41" r="7"/>
-                    </g>
-                </svg>
+            <div class="team-photo">
                 <span class="station-pill c-teal">extended brigade</span>
+                <div class="avatar c-teal specialists">
+                    <svg width="140" height="140" viewBox="0 0 120 120" aria-hidden="true">
+                        <circle cx="60" cy="60" r="14" fill="none" stroke="#5fb0a8" stroke-width="1.5"/>
+                        <g stroke="#5fb0a8" stroke-width="1.2" fill="#161310">
+                            <line x1="60" y1="60" x2="60" y2="22" stroke="#f0e9d820"/>
+                            <circle cx="60" cy="22" r="7"/>
+                            <line x1="60" y1="60" x2="92.91" y2="41" stroke="#f0e9d820"/>
+                            <circle cx="92.91" cy="41" r="7"/>
+                            <line x1="60" y1="60" x2="92.91" y2="79" stroke="#f0e9d820"/>
+                            <circle cx="92.91" cy="79" r="7"/>
+                            <line x1="60" y1="60" x2="60" y2="98" stroke="#f0e9d820"/>
+                            <circle cx="60" cy="98" r="7"/>
+                            <line x1="60" y1="60" x2="27.09" y2="79" stroke="#f0e9d820"/>
+                            <circle cx="27.09" cy="79" r="7"/>
+                            <line x1="60" y1="60" x2="27.09" y2="41" stroke="#f0e9d820"/>
+                            <circle cx="27.09" cy="41" r="7"/>
+                        </g>
+                    </svg>
+                </div>
             </div>
             <div class="team-info">
                 <div class="alias c-teal">Specialisti na klic</div>
@@ -691,7 +721,6 @@
         <div class="geo-card">
             <p class="kicker">KJE DELAMO</p>
             <div class="place"><span class="flag">🇸🇮</span><div class="name">Ljubljana <span class="sub">— sedež</span></div></div>
-            <div class="place"><span class="flag">🇭🇷</span><div class="name">Poreč <span class="sub">— jadranska baza</span></div></div>
             <p>Projektno delo dostavljamo strankam po vsem svetu, oddaljeno. Sodelovanja na lokaciji, delavnice in usposabljanja so na voljo v Sloveniji in sosednjih državah.</p>
             <div class="country-pills">
                 <span>HR</span><span>AT</span><span>IT</span><span>HU</span>
@@ -729,7 +758,7 @@
                 </a>
                 <div class="contact-row" style="cursor:default;">
                     <span class="ico">◉</span>
-                    <div><div class="label">SEDEŽ</div><div class="value">Ljubljana 🇸🇮 · Poreč 🇭🇷</div></div>
+                    <div><div class="label">SEDEŽ</div><div class="value">Ljubljana, Slovenija 🇸🇮</div></div>
                 </div>
                 <div class="contact-row" style="cursor:default; border-bottom:none;">
                     <span class="ico">↦</span>

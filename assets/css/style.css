@@ -828,6 +828,235 @@ section {
     letter-spacing: 0.02em;
 }
 
+/* ───────────────────────── Architecture diagram ───────────────────────── */
+.arch {
+    position: relative;
+}
+
+.arch-rail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--fg-dim);
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.arch-rail .gold { color: var(--gold); }
+
+.arch-rail .dash {
+    flex: 1;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 12px);
+    margin: 0 16px;
+    min-width: 60px;
+}
+
+.arch-stages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    position: relative;
+}
+
+.arch-stage {
+    background: linear-gradient(180deg, var(--bg-card-lift) 0%, var(--bg-card) 100%);
+    border: 1px solid var(--line);
+    border-top: 2px solid var(--ac, var(--gold));
+    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ac, var(--gold)) 30%, transparent);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.arch-stage.c-rust    { --ac: var(--rust); }
+.arch-stage.c-teal    { --ac: var(--teal); }
+.arch-stage.c-saffron { --ac: var(--saffron); }
+.arch-stage.c-gold    { --ac: var(--gold); }
+.arch-stage.c-olive   { --ac: var(--olive); }
+
+.arch-stage-head {
+    padding: 16px 16px 12px;
+    border-bottom: 1px dashed var(--line);
+}
+
+.arch-stage-head .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.arch-stage-head .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--ac);
+    font-weight: 700;
+}
+
+.arch-stage-head .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--fg-dim);
+}
+
+.arch-stage-head .name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    color: var(--fg);
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 4px;
+}
+
+.arch-stage-head .kitchen-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--fg-dim);
+}
+
+.arch-stage-items {
+    padding: 12px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.arch-stage-items .arch-item {
+    padding: 9px 12px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-left: 2px solid color-mix(in srgb, var(--ac) 50%, transparent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arch-stage-items .arch-item .arr {
+    color: var(--ac);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.arch-stage-items .arch-item .name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--fg);
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+.arch-flow-arrow {
+    position: absolute;
+    top: 36px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    z-index: 3;
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    background: var(--bg);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Cross-cutting concerns row */
+.arch-cross {
+    margin-top: 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-top: 1px solid var(--gold);
+    padding: 28px 24px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+}
+
+.arch-cross::before {
+    content: '✦  CROSS-CUTTING CONCERNS  ·  EVERY ENGAGEMENT WE BUILD';
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    background: var(--bg);
+    padding: 0 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.3em;
+    font-weight: 700;
+}
+
+.arch-cross .cell {
+    padding-left: 18px;
+    border-left: 2px solid var(--cc, var(--gold));
+}
+
+.arch-cross .cell.c-saffron { --cc: var(--saffron); }
+.arch-cross .cell.c-olive   { --cc: var(--olive); }
+.arch-cross .cell.c-gold    { --cc: var(--gold); }
+.arch-cross .cell.c-teal    { --cc: var(--teal); }
+
+.arch-cross .cell h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--fg);
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+}
+
+.arch-cross .cell .cell-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--fg-dim);
+    margin-bottom: 12px;
+}
+
+.arch-cross .cell .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.arch-cross .cell .pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border: 1px solid color-mix(in srgb, var(--cc) 50%, transparent);
+    color: var(--cc);
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.arch-credit {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--fg-dim);
+    letter-spacing: 0.02em;
+}
+
 /* ───────────────────────── Method (recipe card) ───────────────────────── */
 .recipe-card {
     background: var(--bg-card);
@@ -962,39 +1191,54 @@ section {
 }
 
 .team-photo {
-    aspect-ratio: 4 / 3;
-    background: repeating-linear-gradient(45deg, var(--bg-card-lift) 0px, var(--bg-card-lift) 1px, transparent 1px, transparent 12px);
-    border-bottom: 1px solid var(--line);
+    padding: 36px 28px 12px;
     position: relative;
     display: flex;
-    align-items: flex-end;
-    padding: 16px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.team-photo img {
-    position: absolute;
-    inset: 0;
+.team-photo .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--av-c, var(--gold-deep));
+    background: var(--bg-card-lift);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 6px var(--bg-card), 0 0 0 7px var(--av-c, var(--gold-deep));
+}
+
+.team-photo .avatar.c-olive { --av-c: var(--olive); }
+.team-photo .avatar.c-gold  { --av-c: var(--gold-deep); }
+.team-photo .avatar.c-teal  { --av-c: var(--teal); }
+
+.team-photo .avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top center;
+    display: block;
 }
 
 .team-photo .station-pill {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 16px;
+    left: 16px;
     padding: 4px 10px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     border: 1px solid;
-    background: rgba(14, 12, 10, 0.7);
+    background: rgba(14, 12, 10, 0.85);
     backdrop-filter: blur(4px);
     white-space: nowrap;
-    z-index: 1;
+    z-index: 2;
 }
 
 .station-pill.c-olive { color: var(--olive); border-color: rgba(154, 165, 107, 0.4); }
@@ -1068,10 +1312,13 @@ section {
     font-weight: 600;
 }
 
-.specialists-photo {
+.team-photo .avatar.specialists {
     background: radial-gradient(circle at center, var(--bg-card-lift), var(--bg));
-    align-items: center;
-    justify-content: center;
+}
+
+.team-photo .avatar.specialists svg {
+    max-width: 70%;
+    max-height: 70%;
 }
 
 /* ───────────────────────── Partners ───────────────────────── */
@@ -1605,6 +1852,10 @@ footer .legal {
     .stations { grid-template-columns: 1fr 1fr; row-gap: 40px; }
     .station:nth-child(2) .handoff,
     .station:nth-child(4) .handoff { display: none; }
+    .arch-stages { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+    .arch-stages .arch-stage:nth-child(2) .arch-flow-arrow,
+    .arch-stages .arch-stage:nth-child(4) .arch-flow-arrow { display: none; }
+    .arch-cross { grid-template-columns: 1fr; gap: 28px; }
     .strategic-partner { grid-template-columns: 200px 1fr; gap: 32px; }
     .strategic-flair { display: none; }
 }
@@ -1665,6 +1916,8 @@ footer .legal {
 
     .stations { grid-template-columns: 1fr; }
     .handoff { display: none !important; }
+    .arch-stages { grid-template-columns: 1fr; gap: 16px; }
+    .arch-flow-arrow { display: none !important; }
 
     .steps { grid-template-columns: 1fr 1fr; gap: 24px; }
 
