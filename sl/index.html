@@ -38,6 +38,218 @@
     <link rel="alternate" hreflang="de" href="https://ai-bistro.com/de/">
     <link rel="alternate" hreflang="x-default" href="https://ai-bistro.com/en/">
 
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ai-bistro.com/#org",
+          "name": "AI BISTRO d.o.o.",
+          "alternateName": "AI BISTRO",
+          "url": "https://ai-bistro.com/",
+          "logo": "https://ai-bistro.com/assets/img/ai_bistro_logo_full.png",
+          "image": "https://ai-bistro.com/assets/img/og-image.png",
+          "email": "info@ai-bistro.com",
+          "foundingDate": "2024",
+          "vatID": "SI70936234",
+          "taxID": "7420412000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cesta v Lipovce 3B",
+            "addressLocality": "Log pri Brezovici",
+            "postalCode": "1358",
+            "addressCountry": "SI"
+          },
+          "founder": { "@id": "https://ai-bistro.com/#andy" },
+          "sameAs": [
+            "https://www.linkedin.com/company/ai-bistro"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://ai-bistro.com/#service",
+          "name": "AI BISTRO",
+          "url": "https://ai-bistro.com/sl/",
+          "parentOrganization": { "@id": "https://ai-bistro.com/#org" },
+          "description": "Produkcijski AI: obdelava dokumentov, agenti, reševanje kodne baze in Microsoftova usposabljanja. Sedež v EU, oddaljeno delo po vsem svetu, osebno v Sloveniji in sosednjih državah.",
+          "image": "https://ai-bistro.com/assets/img/og-image.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cesta v Lipovce 3B",
+            "addressLocality": "Log pri Brezovici",
+            "postalCode": "1358",
+            "addressCountry": "SI"
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "Slovenia" },
+            { "@type": "Country", "name": "Croatia" },
+            { "@type": "Country", "name": "Austria" },
+            { "@type": "Country", "name": "Germany" },
+            { "@type": "Country", "name": "Switzerland" },
+            { "@type": "Country", "name": "Italy" },
+            { "@type": "Country", "name": "Hungary" }
+          ],
+          "availableLanguage": ["en", "sl", "de", "ru"],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "Document Intelligence",
+            "LLM Agents",
+            "Retrieval-Augmented Generation",
+            "Legacy Modernization",
+            "Microsoft Azure",
+            "Microsoft Fabric",
+            "Data Engineering",
+            "MLOps"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI BISTRO Meni",
+            "itemListElement": [
+              { "@type": "Offer", "name": "Uvodna delavnica", "description": "1-2 tedenski sprint za zemljevid AI priložnosti in obseg projektov z visokim učinkom." },
+              { "@type": "Offer", "name": "Document Intelligence", "description": "8-16 tedenska gradnja produkcijskih cevovodov za ekstrakcijo z revizijsko sledjo." },
+              { "@type": "Offer", "name": "Razvoj agentov AI", "description": "10-20 tedenska gradnja agentnih sistemov z opazljivostjo in varovali." },
+              { "@type": "Offer", "name": "Reševanje kodne baze", "description": "4-12 tedenski projekt: modernizacija starih sistemov, podedovane kodne baze, AI MVP-ji utrjeni za produkcijo." },
+              { "@type": "Offer", "name": "Frakcijski CTO / vodja AI", "description": "6-12 mesečni retainer s seniorskim AI vodstvom, vključenim v vašo ekipo." },
+              { "@type": "Offer", "name": "AI usposabljanje za ekipe", "description": "Uradni Microsoftovi tečaji, ki jih izvajajo certificirani trenerji, osebno ali oddaljeno." }
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ai-bistro.com/#andy",
+          "name": "Andrey Vykhodtsev",
+          "givenName": "Andrey",
+          "familyName": "Vykhodtsev",
+          "alternateName": "Andy V.",
+          "jobTitle": "CTO & ustanovitelj",
+          "worksFor": { "@id": "https://ai-bistro.com/#org" },
+          "knowsLanguage": ["en", "sl", "de", "ru"],
+          "knowsAbout": ["Artificial Intelligence", "Cloud Architecture", "Data Engineering", "LLM Agents", "Legacy Modernization", "Python"],
+          "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified Trainer", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-900: Microsoft Azure AI Fundamentals", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-102: Designing and Implementing an Azure AI Solution", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-050: Develop Generative AI Solutions with Azure OpenAI", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-100: Designing a Data Science Solution on Azure", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-203: Data Engineering on Microsoft Azure", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ai-bistro.com/#nadya",
+          "name": "Nadezda Vykhodtseva",
+          "givenName": "Nadezda",
+          "familyName": "Vykhodtseva",
+          "alternateName": "Nadya V.",
+          "jobTitle": "CEO & vodja",
+          "worksFor": { "@id": "https://ai-bistro.com/#org" },
+          "knowsLanguage": ["en", "sl", "ru"]
+        },
+        {
+          "@type": "Course",
+          "name": "AI-900: Microsoft Azure AI Fundamentals",
+          "courseCode": "AI-900",
+          "description": "Temeljno znanje o konceptih UI, NLP, računalniškem vidu in generativni UI na Azuru. Začetni certifikat.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "AI-102: Designing and Implementing an Azure AI Solution",
+          "courseCode": "AI-102",
+          "description": "Gradnja UI rešitev z Azure AI Services, Azure AI Search in vzorci integracije. Za razvijalce.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "AI-050: Develop Generative AI Solutions with Azure OpenAI",
+          "courseCode": "AI-050",
+          "description": "Inženiring pozivov, vzorci RAG, fino prilagajanje in odgovorna UI z Azure OpenAI Service.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-100: Designing a Data Science Solution on Azure",
+          "courseCode": "DP-100",
+          "description": "Učenje in uvajanje modelov strojnega učenja z Azure Machine Learning, MLflow in avtomatiziranimi ML cevovodi.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-203: Data Engineering on Microsoft Azure",
+          "courseCode": "DP-203",
+          "description": "Gradnja podatkovnih cevovodov z Azure Data Factory, Synapse Analytics, Databricks in Stream Analytics.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+          "courseCode": "DP-600",
+          "description": "Celovite analitične rešitve z lakehousi, podatkovnimi tokovi, zvezki in Power BI v Microsoft Fabric.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ai-bistro.com/sl/#website",
+          "url": "https://ai-bistro.com/sl/",
+          "name": "AI BISTRO",
+          "inLanguage": "sl",
+          "publisher": { "@id": "https://ai-bistro.com/#org" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://ai-bistro.com/sl/" },
+            { "@type": "ListItem", "position": 2, "name": "Meni", "item": "https://ai-bistro.com/sl/#menu" },
+            { "@type": "ListItem", "position": 3, "name": "Izdelki", "item": "https://ai-bistro.com/sl/#products" },
+            { "@type": "ListItem", "position": 4, "name": "Metoda", "item": "https://ai-bistro.com/sl/#method" },
+            { "@type": "ListItem", "position": 5, "name": "Usposabljanje", "item": "https://ai-bistro.com/sl/#training" },
+            { "@type": "ListItem", "position": 6, "name": "Ekipa", "item": "https://ai-bistro.com/sl/#team" },
+            { "@type": "ListItem", "position": 7, "name": "Kontakt", "item": "https://ai-bistro.com/sl/#contact" }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -48,10 +260,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=v6">
+    <link rel="stylesheet" href="../assets/css/style.css?v=v7">
 </head>
 <body>
 
@@ -472,7 +685,7 @@
 
         <div class="arch-cross">
             <div class="cell c-saffron">
-                <h5>Opazljivost</h5>
+                <h3>Opazljivost</h3>
                 <div class="cell-sub">Vsak klic izsleden, vsak strošek spremljan.</div>
                 <div class="pills">
                     <span class="pill">OpenTelemetry</span>
@@ -484,7 +697,7 @@
                 </div>
             </div>
             <div class="cell c-olive">
-                <h5>Evalvacije</h5>
+                <h3>Evalvacije</h3>
                 <div class="cell-sub">Je rešitev res dobra — in še naprej dobra?</div>
                 <div class="pills">
                     <span class="pill">Golden Datasets</span>
@@ -496,7 +709,7 @@
                 </div>
             </div>
             <div class="cell c-gold">
-                <h5>Upravljanje in varnost</h5>
+                <h3>Upravljanje in varnost</h3>
                 <div class="cell-sub">Pripravljeno na revizijo že privzeto.</div>
                 <div class="pills">
                     <span class="pill">Data Residency</span>
@@ -526,25 +739,25 @@
         <div class="steps">
             <div class="step">
                 <div class="num-circle c-olive" style="border-color: var(--olive);">01</div>
-                <h4>Pokušanje &amp; razumevanje</h4>
+                <h3>Pokušanje &amp; razumevanje</h3>
                 <p>Poglobljeno spoznavanje vaše podatkovne pokrajine, poslovnih potreb in tehničnih omejitev.</p>
                 <p class="dur c-olive">↳ 1–2 tedna</p>
             </div>
             <div class="step">
                 <div class="num-circle c-gold" style="border-color: var(--gold);">02</div>
-                <h4>Načrtovanje recepta</h4>
+                <h3>Načrtovanje recepta</h3>
                 <p>Načrtovanje arhitekture, dokaz izvedljivosti, validacija na resničnih podatkih.</p>
                 <p class="dur c-gold">↳ 2–4 tedne</p>
             </div>
             <div class="step">
                 <div class="num-circle c-saffron" style="border-color: var(--saffron);">03</div>
-                <h4>Kuhanje &amp; iteracije</h4>
+                <h3>Kuhanje &amp; iteracije</h3>
                 <p>Agilen razvoj, neprestane povratne informacije, produkcijska kakovost.</p>
                 <p class="dur c-saffron">↳ neprestano</p>
             </div>
             <div class="step">
                 <div class="num-circle c-rust" style="border-color: var(--rust);">04</div>
-                <h4>Strežba &amp; podpora</h4>
+                <h3>Strežba &amp; podpora</h3>
                 <p>Uvedba, prenos znanja, optimizacija, ki traja.</p>
                 <p class="dur c-rust">↳ vedno</p>
             </div>
@@ -562,12 +775,12 @@
         <p class="lead" style="margin-top:24px;">Naša ekipa ima Microsoftove certifikate za trenerje (MCT). Izvajamo uradne Microsoftove tečaje za izpopolnjevanje vaših ekip na področju UI, podatkov in oblaka — javne skupine v Ljubljani, zasebne korporativne skupine osebno ali oddaljeno, v angleškem, slovenskem ali ruskem jeziku.</p>
     </div>
     <div class="mct-grid">
-        <article class="mct c-rust"><span class="code">AI-900</span><h4>Microsoft Azure AI Fundamentals</h4><p>Temeljno znanje o konceptih UI, NLP, računalniškem vidu in generativni UI na Azuru. Začetni certifikat.</p></article>
-        <article class="mct c-teal"><span class="code">AI-102</span><h4>Designing &amp; Implementing an Azure AI Solution</h4><p>Gradnja UI rešitev z Azure AI Services, Azure AI Search in vzorci integracije. Za razvijalce.</p></article>
-        <article class="mct c-rust"><span class="code">AI-050</span><h4>Develop Generative AI Solutions with Azure OpenAI</h4><p>Inženiring pozivov, vzorci RAG, fino prilagajanje in odgovorna UI z Azure OpenAI Service.</p></article>
-        <article class="mct c-teal"><span class="code">DP-100</span><h4>Designing a Data Science Solution on Azure</h4><p>Učenje in uvajanje modelov strojnega učenja z Azure Machine Learning, MLflow in avtomatiziranimi ML cevovodi.</p></article>
-        <article class="mct c-rust"><span class="code">DP-203</span><h4>Data Engineering on Microsoft Azure</h4><p>Gradnja podatkovnih cevovodov z Azure Data Factory, Synapse Analytics, Databricks in Stream Analytics.</p></article>
-        <article class="mct c-teal"><span class="code">DP-600</span><h4>Implementing Analytics Solutions Using Microsoft Fabric</h4><p>Celovite analitične rešitve z lakehousi, podatkovnimi tokovi, zvezki in Power BI v Microsoft Fabric.</p></article>
+        <article class="mct c-rust"><span class="code">AI-900</span><h3>Microsoft Azure AI Fundamentals</h3><p>Temeljno znanje o konceptih UI, NLP, računalniškem vidu in generativni UI na Azuru. Začetni certifikat.</p></article>
+        <article class="mct c-teal"><span class="code">AI-102</span><h3>Designing &amp; Implementing an Azure AI Solution</h3><p>Gradnja UI rešitev z Azure AI Services, Azure AI Search in vzorci integracije. Za razvijalce.</p></article>
+        <article class="mct c-rust"><span class="code">AI-050</span><h3>Develop Generative AI Solutions with Azure OpenAI</h3><p>Inženiring pozivov, vzorci RAG, fino prilagajanje in odgovorna UI z Azure OpenAI Service.</p></article>
+        <article class="mct c-teal"><span class="code">DP-100</span><h3>Designing a Data Science Solution on Azure</h3><p>Učenje in uvajanje modelov strojnega učenja z Azure Machine Learning, MLflow in avtomatiziranimi ML cevovodi.</p></article>
+        <article class="mct c-rust"><span class="code">DP-203</span><h3>Data Engineering on Microsoft Azure</h3><p>Gradnja podatkovnih cevovodov z Azure Data Factory, Synapse Analytics, Databricks in Stream Analytics.</p></article>
+        <article class="mct c-teal"><span class="code">DP-600</span><h3>Implementing Analytics Solutions Using Microsoft Fabric</h3><p>Celovite analitične rešitve z lakehousi, podatkovnimi tokovi, zvezki in Power BI v Microsoft Fabric.</p></article>
     </div>
     <div class="training-cta">
         <a href="#contact?offer=cooking-class" class="btn btn-primary">Povprašaj za ponudbo usposabljanja →</a>
@@ -673,7 +886,7 @@
     <div class="group-label">STRATEŠKI PARTNER</div>
     <div class="strategic-partner">
         <div class="strategic-logo">
-            <img src="../assets/img/aprova-logo.png" alt="Aprova GmbH">
+            <img src="../assets/img/aprova-logo.png" alt="Logotip Aprova GmbH" width="330" height="55" loading="lazy" decoding="async">
         </div>
         <div class="strategic-info">
             <span class="country">Baar, Švica</span>
@@ -752,19 +965,19 @@
             <div class="sub">Povejte nam, kaj potrebujete — hitro vam bomo odgovorili.</div>
 
             <div class="form-group">
-                <label>Ime <span class="req">*</span></label>
-                <input type="text" name="name" placeholder="Vaše ime" required>
+                <label for="form-name">Ime <span class="req">*</span></label>
+                <input type="text" id="form-name" name="name" placeholder="Vaše ime" required>
             </div>
             <div class="form-group">
-                <label>Podjetje <span class="req">*</span></label>
-                <input type="text" name="company" placeholder="Ime podjetja" required>
+                <label for="form-company">Podjetje <span class="req">*</span></label>
+                <input type="text" id="form-company" name="company" placeholder="Ime podjetja" required>
             </div>
             <div class="form-group">
-                <label>E-pošta <span class="req">*</span></label>
-                <input type="email" name="email" placeholder="ime@podjetje.com" required>
+                <label for="form-email">E-pošta <span class="req">*</span></label>
+                <input type="email" id="form-email" name="email" placeholder="ime@podjetje.com" required>
             </div>
             <div class="form-group">
-                <label>Katera jed? <span class="req">*</span></label>
+                <label for="offer-select">Katera jed? <span class="req">*</span></label>
                 <select name="offer" id="offer-select" required>
                     <option value="not-sure">Še ne vem</option>
                     <option value="amuse-bouche">Amuse-Bouche (uvodna delavnica)</option>
@@ -789,8 +1002,8 @@
                 </div>
             </div>
             <div class="form-group">
-                <label>Kaj se kuha? <span class="req">*</span></label>
-                <textarea name="message" placeholder="Poskušamo ugotoviti…" required></textarea>
+                <label for="form-message">Kaj se kuha? <span class="req">*</span></label>
+                <textarea id="form-message" name="message" placeholder="Poskušamo ugotoviti…" required></textarea>
             </div>
 
             <button type="submit">Pošlji →</button>
@@ -804,6 +1017,6 @@
     <p class="legal">AI BISTRO d.o.o. · Mat. št. 7420412000 · DDV SI70936234 · Cesta v Lipovce 3B, 1358 Log pri Brezovici · &copy; 2026</p>
 </footer>
 
-<script src="../assets/js/main.js?v=v6"></script>
+<script src="../assets/js/main.js?v=v7"></script>
 </body>
 </html>

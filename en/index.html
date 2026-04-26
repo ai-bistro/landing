@@ -38,6 +38,218 @@
     <link rel="alternate" hreflang="de" href="https://ai-bistro.com/de/">
     <link rel="alternate" hreflang="x-default" href="https://ai-bistro.com/en/">
 
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ai-bistro.com/#org",
+          "name": "AI BISTRO d.o.o.",
+          "alternateName": "AI BISTRO",
+          "url": "https://ai-bistro.com/",
+          "logo": "https://ai-bistro.com/assets/img/ai_bistro_logo_full.png",
+          "image": "https://ai-bistro.com/assets/img/og-image.png",
+          "email": "info@ai-bistro.com",
+          "foundingDate": "2024",
+          "vatID": "SI70936234",
+          "taxID": "7420412000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cesta v Lipovce 3B",
+            "addressLocality": "Log pri Brezovici",
+            "postalCode": "1358",
+            "addressCountry": "SI"
+          },
+          "founder": { "@id": "https://ai-bistro.com/#andy" },
+          "sameAs": [
+            "https://www.linkedin.com/company/ai-bistro"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://ai-bistro.com/#service",
+          "name": "AI BISTRO",
+          "url": "https://ai-bistro.com/en/",
+          "parentOrganization": { "@id": "https://ai-bistro.com/#org" },
+          "description": "Production-grade AI: document intelligence, custom agents, AI codebase rescue, and Microsoft-certified training. EU-based, remote-first worldwide, on-site in Slovenia and neighboring countries.",
+          "image": "https://ai-bistro.com/assets/img/og-image.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cesta v Lipovce 3B",
+            "addressLocality": "Log pri Brezovici",
+            "postalCode": "1358",
+            "addressCountry": "SI"
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "Slovenia" },
+            { "@type": "Country", "name": "Croatia" },
+            { "@type": "Country", "name": "Austria" },
+            { "@type": "Country", "name": "Germany" },
+            { "@type": "Country", "name": "Switzerland" },
+            { "@type": "Country", "name": "Italy" },
+            { "@type": "Country", "name": "Hungary" }
+          ],
+          "availableLanguage": ["en", "sl", "de", "ru"],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "Document Intelligence",
+            "LLM Agents",
+            "Retrieval-Augmented Generation",
+            "Legacy Modernization",
+            "Microsoft Azure",
+            "Microsoft Fabric",
+            "Data Engineering",
+            "MLOps"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI BISTRO Menu",
+            "itemListElement": [
+              { "@type": "Offer", "name": "Discovery Workshop", "description": "1-2 week sprint to map AI opportunities and scope high-impact engagements." },
+              { "@type": "Offer", "name": "Document Intelligence Build", "description": "8-16 week build of production-grade extraction pipelines with audit trail." },
+              { "@type": "Offer", "name": "Custom AI Agent Development", "description": "10-20 week build of bespoke agentic systems with observability and guardrails." },
+              { "@type": "Offer", "name": "AI Codebase Rescue", "description": "4-12 week engagement: legacy modernization, abandoned codebases, AI-generated MVPs hardened for production." },
+              { "@type": "Offer", "name": "Fractional CTO / AI Lead", "description": "6-12 month retainer providing senior AI leadership embedded with your team." },
+              { "@type": "Offer", "name": "AI Training for Teams", "description": "Microsoft Official Courses delivered by certified trainers, on-site or remote." }
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ai-bistro.com/#andy",
+          "name": "Andrey Vykhodtsev",
+          "givenName": "Andrey",
+          "familyName": "Vykhodtsev",
+          "alternateName": "Andy V.",
+          "jobTitle": "CTO & Founder",
+          "worksFor": { "@id": "https://ai-bistro.com/#org" },
+          "knowsLanguage": ["en", "sl", "de", "ru"],
+          "knowsAbout": ["Artificial Intelligence", "Cloud Architecture", "Data Engineering", "LLM Agents", "Legacy Modernization", "Python"],
+          "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified Trainer", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-900: Microsoft Azure AI Fundamentals", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-102: Designing and Implementing an Azure AI Solution", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AI-050: Develop Generative AI Solutions with Azure OpenAI", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-100: Designing a Data Science Solution on Azure", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-203: Data Engineering on Microsoft Azure", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ai-bistro.com/#nadya",
+          "name": "Nadezda Vykhodtseva",
+          "givenName": "Nadezda",
+          "familyName": "Vykhodtseva",
+          "alternateName": "Nadya V.",
+          "jobTitle": "CEO & Manager",
+          "worksFor": { "@id": "https://ai-bistro.com/#org" },
+          "knowsLanguage": ["en", "sl", "ru"]
+        },
+        {
+          "@type": "Course",
+          "name": "AI-900: Microsoft Azure AI Fundamentals",
+          "courseCode": "AI-900",
+          "description": "Foundational knowledge of AI concepts, NLP, computer vision, and generative AI on Azure. Entry-level certification.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "AI-102: Designing and Implementing an Azure AI Solution",
+          "courseCode": "AI-102",
+          "description": "Build AI solutions with Azure AI Services, Azure AI Search, and integration patterns. For developers.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "AI-050: Develop Generative AI Solutions with Azure OpenAI",
+          "courseCode": "AI-050",
+          "description": "Prompt engineering, RAG patterns, fine-tuning, and responsible AI with Azure OpenAI Service.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-100: Designing a Data Science Solution on Azure",
+          "courseCode": "DP-100",
+          "description": "Train and deploy ML models with Azure Machine Learning, MLflow, and automated ML pipelines.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-203: Data Engineering on Microsoft Azure",
+          "courseCode": "DP-203",
+          "description": "Build pipelines with Azure Data Factory, Synapse Analytics, Databricks, and Stream Analytics.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+          "courseCode": "DP-600",
+          "description": "End-to-end analytics with lakehouses, dataflows, notebooks, and Power BI in Microsoft Fabric.",
+          "provider": { "@id": "https://ai-bistro.com/#org" },
+          "inLanguage": ["en", "sl", "ru"],
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Blended",
+            "location": { "@type": "City", "name": "Ljubljana" }
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ai-bistro.com/en/#website",
+          "url": "https://ai-bistro.com/en/",
+          "name": "AI BISTRO",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://ai-bistro.com/#org" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ai-bistro.com/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Menu", "item": "https://ai-bistro.com/en/#menu" },
+            { "@type": "ListItem", "position": 3, "name": "Products", "item": "https://ai-bistro.com/en/#products" },
+            { "@type": "ListItem", "position": 4, "name": "Method", "item": "https://ai-bistro.com/en/#method" },
+            { "@type": "ListItem", "position": 5, "name": "Training", "item": "https://ai-bistro.com/en/#training" },
+            { "@type": "ListItem", "position": 6, "name": "Team", "item": "https://ai-bistro.com/en/#team" },
+            { "@type": "ListItem", "position": 7, "name": "Contact", "item": "https://ai-bistro.com/en/#contact" }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -48,10 +260,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=v6">
+    <link rel="stylesheet" href="../assets/css/style.css?v=v7">
 </head>
 <body>
 
@@ -472,7 +685,7 @@
 
         <div class="arch-cross">
             <div class="cell c-saffron">
-                <h5>Observability</h5>
+                <h3>Observability</h3>
                 <div class="cell-sub">Every call traced, every cost tracked.</div>
                 <div class="pills">
                     <span class="pill">OpenTelemetry</span>
@@ -484,7 +697,7 @@
                 </div>
             </div>
             <div class="cell c-olive">
-                <h5>Evaluations</h5>
+                <h3>Evaluations</h3>
                 <div class="cell-sub">Is it actually good — and still good?</div>
                 <div class="pills">
                     <span class="pill">Golden Datasets</span>
@@ -496,7 +709,7 @@
                 </div>
             </div>
             <div class="cell c-gold">
-                <h5>Governance &amp; Security</h5>
+                <h3>Governance &amp; Security</h3>
                 <div class="cell-sub">Audit-ready by default.</div>
                 <div class="pills">
                     <span class="pill">Data Residency</span>
@@ -526,25 +739,25 @@
         <div class="steps">
             <div class="step">
                 <div class="num-circle c-olive" style="border-color: var(--olive);">01</div>
-                <h4>Taste &amp; Understand</h4>
+                <h3>Taste &amp; Understand</h3>
                 <p>Deep dive into your data landscape, business needs, and technical constraints.</p>
                 <p class="dur c-olive">↳ 1–2 weeks</p>
             </div>
             <div class="step">
                 <div class="num-circle c-gold" style="border-color: var(--gold);">02</div>
-                <h4>Design the Recipe</h4>
+                <h3>Design the Recipe</h3>
                 <p>Architecture design, proof of concept, validation with real data.</p>
                 <p class="dur c-gold">↳ 2–4 weeks</p>
             </div>
             <div class="step">
                 <div class="num-circle c-saffron" style="border-color: var(--saffron);">03</div>
-                <h4>Cook &amp; Iterate</h4>
+                <h3>Cook &amp; Iterate</h3>
                 <p>Agile development, continuous feedback, production-grade quality.</p>
                 <p class="dur c-saffron">↳ ongoing</p>
             </div>
             <div class="step">
                 <div class="num-circle c-rust" style="border-color: var(--rust);">04</div>
-                <h4>Serve &amp; Support</h4>
+                <h3>Serve &amp; Support</h3>
                 <p>Deployment, knowledge transfer, optimization that lasts.</p>
                 <p class="dur c-rust">↳ always</p>
             </div>
@@ -562,12 +775,12 @@
         <p class="lead" style="margin-top:24px;">Our team holds Microsoft Certified Trainer (MCT) credentials. We deliver official Microsoft courses to upskill your teams in AI, data, and cloud — public cohorts in Ljubljana, private corporate cohorts on-site or remote, in English, Slovenian, or Russian.</p>
     </div>
     <div class="mct-grid">
-        <article class="mct c-rust"><span class="code">AI-900</span><h4>Microsoft Azure AI Fundamentals</h4><p>Foundational knowledge of AI concepts, NLP, computer vision, and generative AI on Azure. Entry-level certification.</p></article>
-        <article class="mct c-teal"><span class="code">AI-102</span><h4>Designing &amp; Implementing an Azure AI Solution</h4><p>Build AI solutions with Azure AI Services, Azure AI Search, and integration patterns. For developers.</p></article>
-        <article class="mct c-rust"><span class="code">AI-050</span><h4>Develop Generative AI Solutions with Azure OpenAI</h4><p>Prompt engineering, RAG patterns, fine-tuning, and responsible AI with Azure OpenAI Service.</p></article>
-        <article class="mct c-teal"><span class="code">DP-100</span><h4>Designing a Data Science Solution on Azure</h4><p>Train and deploy ML models with Azure Machine Learning, MLflow, and automated ML pipelines.</p></article>
-        <article class="mct c-rust"><span class="code">DP-203</span><h4>Data Engineering on Microsoft Azure</h4><p>Build pipelines with Azure Data Factory, Synapse Analytics, Databricks, and Stream Analytics.</p></article>
-        <article class="mct c-teal"><span class="code">DP-600</span><h4>Implementing Analytics Solutions Using Microsoft Fabric</h4><p>End-to-end analytics with lakehouses, dataflows, notebooks, and Power BI in Microsoft Fabric.</p></article>
+        <article class="mct c-rust"><span class="code">AI-900</span><h3>Microsoft Azure AI Fundamentals</h3><p>Foundational knowledge of AI concepts, NLP, computer vision, and generative AI on Azure. Entry-level certification.</p></article>
+        <article class="mct c-teal"><span class="code">AI-102</span><h3>Designing &amp; Implementing an Azure AI Solution</h3><p>Build AI solutions with Azure AI Services, Azure AI Search, and integration patterns. For developers.</p></article>
+        <article class="mct c-rust"><span class="code">AI-050</span><h3>Develop Generative AI Solutions with Azure OpenAI</h3><p>Prompt engineering, RAG patterns, fine-tuning, and responsible AI with Azure OpenAI Service.</p></article>
+        <article class="mct c-teal"><span class="code">DP-100</span><h3>Designing a Data Science Solution on Azure</h3><p>Train and deploy ML models with Azure Machine Learning, MLflow, and automated ML pipelines.</p></article>
+        <article class="mct c-rust"><span class="code">DP-203</span><h3>Data Engineering on Microsoft Azure</h3><p>Build pipelines with Azure Data Factory, Synapse Analytics, Databricks, and Stream Analytics.</p></article>
+        <article class="mct c-teal"><span class="code">DP-600</span><h3>Implementing Analytics Solutions Using Microsoft Fabric</h3><p>End-to-end analytics with lakehouses, dataflows, notebooks, and Power BI in Microsoft Fabric.</p></article>
     </div>
     <div class="training-cta">
         <a href="#contact?offer=cooking-class" class="btn btn-primary">Request a Training Quote →</a>
@@ -673,7 +886,7 @@
     <div class="group-label">STRATEGIC PARTNER</div>
     <div class="strategic-partner">
         <div class="strategic-logo">
-            <img src="../assets/img/aprova-logo.png" alt="Aprova GmbH">
+            <img src="../assets/img/aprova-logo.png" alt="Aprova GmbH logo" width="330" height="55" loading="lazy" decoding="async">
         </div>
         <div class="strategic-info">
             <span class="country">Baar, Switzerland</span>
@@ -752,19 +965,19 @@
             <div class="sub">Tell us what you need — we'll write back fast.</div>
 
             <div class="form-group">
-                <label>Name <span class="req">*</span></label>
-                <input type="text" name="name" placeholder="Your name" required>
+                <label for="form-name">Name <span class="req">*</span></label>
+                <input type="text" id="form-name" name="name" placeholder="Your name" required>
             </div>
             <div class="form-group">
-                <label>Company <span class="req">*</span></label>
-                <input type="text" name="company" placeholder="Company name" required>
+                <label for="form-company">Company <span class="req">*</span></label>
+                <input type="text" id="form-company" name="company" placeholder="Company name" required>
             </div>
             <div class="form-group">
-                <label>Email <span class="req">*</span></label>
-                <input type="email" name="email" placeholder="name@company.com" required>
+                <label for="form-email">Email <span class="req">*</span></label>
+                <input type="email" id="form-email" name="email" placeholder="name@company.com" required>
             </div>
             <div class="form-group">
-                <label>Which dish? <span class="req">*</span></label>
+                <label for="offer-select">Which dish? <span class="req">*</span></label>
                 <select name="offer" id="offer-select" required>
                     <option value="not-sure">Not sure yet</option>
                     <option value="amuse-bouche">Amuse-Bouche (Discovery Workshop)</option>
@@ -789,8 +1002,8 @@
                 </div>
             </div>
             <div class="form-group">
-                <label>What's cooking? <span class="req">*</span></label>
-                <textarea name="message" placeholder="We're trying to figure out…" required></textarea>
+                <label for="form-message">What's cooking? <span class="req">*</span></label>
+                <textarea id="form-message" name="message" placeholder="We're trying to figure out…" required></textarea>
             </div>
 
             <button type="submit">Send it Over →</button>
@@ -804,6 +1017,6 @@
     <p class="legal">AI BISTRO d.o.o. · Mat. št. 7420412000 · DDV SI70936234 · Cesta v Lipovce 3B, 1358 Log pri Brezovici · &copy; 2026</p>
 </footer>
 
-<script src="../assets/js/main.js?v=v6"></script>
+<script src="../assets/js/main.js?v=v7"></script>
 </body>
 </html>

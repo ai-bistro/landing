@@ -1014,7 +1014,7 @@ section {
 .arch-cross .cell.c-gold    { --cc: var(--gold); }
 .arch-cross .cell.c-teal    { --cc: var(--teal); }
 
-.arch-cross .cell h5 {
+.arch-cross .cell h3 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 500;
@@ -1102,7 +1102,7 @@ section {
     margin-bottom: 24px;
 }
 
-.step h4 {
+.step h3 {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 500;
@@ -1154,7 +1154,7 @@ section {
 .mct.c-rust .code { background: var(--rust); }
 .mct.c-teal .code { background: var(--teal); }
 
-.mct h4 {
+.mct h3 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 500;
