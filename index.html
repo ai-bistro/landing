@@ -13,26 +13,25 @@
       gtag('config', 'G-CZC6XJ16E4');
     </script>
 
-    <title>AI BISTRO — Redirecting...</title>
+    <title>AI BISTRO — Redirecting…</title>
     <meta http-equiv="refresh" content="3;url=/en/">
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --navy: #121624;
-            --gold: #c8a05a;
-            --cream: #f5f0e8;
-            --cream-dim: #f5f0e8aa;
-            --text-dim: #8a8577;
-            --charcoal: #2d3250;
+            --bg: #0e0c0a;
+            --fg: #f0e9d8;
+            --fg-soft: #f0e9d899;
+            --gold: #d4a64a;
+            --line: #f0e9d820;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Instrument Sans', -apple-system, sans-serif;
-            background: var(--navy);
-            color: var(--cream);
+            font-family: 'Playfair Display', serif;
+            background: var(--bg);
+            color: var(--fg);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -42,32 +41,35 @@
             padding: 2rem;
         }
         h1 {
-            font-family: 'Young Serif', serif;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            margin-bottom: 1.5rem;
         }
-        h1 .ai { color: var(--gold); }
         p {
-            color: var(--text-dim);
-            margin-bottom: 2rem;
-            font-size: 1rem;
+            color: var(--fg-soft);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+            font-size: 1.05rem;
         }
         .lang-links {
             display: flex;
-            gap: 1.5rem;
+            gap: 1rem;
             flex-wrap: wrap;
             justify-content: center;
         }
         .lang-links a {
             display: inline-block;
-            padding: 0.8rem 2rem;
-            border: 1px solid var(--charcoal);
-            color: var(--cream);
+            padding: 0.85rem 2rem;
+            border: 1px solid var(--line);
+            color: var(--fg);
             text-decoration: none;
-            font-family: 'DM Mono', monospace;
-            font-size: 0.9rem;
-            letter-spacing: 0.08em;
-            transition: all 0.3s;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transition: all 0.25s;
         }
         .lang-links a:hover {
             border-color: var(--gold);
@@ -88,7 +90,7 @@
     </script>
 </head>
 <body>
-    <h1><span class="ai">AI</span> BISTRO</h1>
+    <h1>AI BISTRO</h1>
     <p>Choose your language / Izberite jezik / Sprache wählen</p>
     <div class="lang-links">
         <a href="/en/">English</a>

@@ -15,51 +15,29 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=v6">
 </head>
-<body>
+<body style="display:flex; flex-direction:column; min-height:100vh;">
 
-<section class="hero" style="min-height: 100vh; justify-content: center;">
-    <div class="hero-bg">
-        <div class="grid-line v" style="left: 20%"></div>
-        <div class="grid-line v" style="left: 40%"></div>
-        <div class="grid-line v" style="left: 60%"></div>
-        <div class="grid-line v" style="left: 80%"></div>
-        <div class="grid-line h" style="top: 25%"></div>
-        <div class="grid-line h" style="top: 50%"></div>
-        <div class="grid-line h" style="top: 75%"></div>
-    </div>
-
-    <p class="section-label">// Bestellung eingegangen</p>
-    <h1 style="font-family: 'Young Serif', serif; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--cream); margin-bottom: 1rem;">
-        Vielen Dank<span style="color: var(--gold);">.</span>
-    </h1>
-    <p class="hero-tagline">Ihre Anfrage wurde empfangen</p>
-    <p style="color: var(--text-dim); max-width: 480px; text-align: center; line-height: 1.7; margin-bottom: 2.5rem;">
-        Wir werden Ihre Nachricht prüfen und uns in Kürze bei Ihnen melden. In der Zwischenzeit können Sie gerne unser Menü erkunden.
+<section class="hero" style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:4rem 1.5rem;">
+    <p class="kicker">BESTELLUNG ERHALTEN</p>
+    <h1 class="display" style="text-align:center;">Vielen Dank<span class="gd">.</span></h1>
+    <div class="italic-kicker" style="text-align:center;">— <span class="script">Ihr Platz ist reserviert.</span></div>
+    <p class="lead" style="margin: 32px auto 0; text-align:center;">
+        Wir prüfen Ihre Nachricht und melden uns in Kürze bei Ihnen. In der Zwischenzeit können Sie gerne unsere Speisekarte erkunden.
     </p>
-
     <div class="hero-cta">
-        <a href="/de/" class="btn btn-primary">Zurück zur Startseite &rarr;</a>
-        <a href="/de/#menu" class="btn btn-outline">Menü ansehen</a>
+        <a href="/de/" class="btn btn-primary">Zurück zur Startseite →</a>
+        <a href="/de/#menu" class="btn btn-outline">Zur Speisekarte</a>
     </div>
 </section>
 
 <footer>
-    <p class="footer-logo"><span class="ai">AI</span> BISTRO</p>
-    <p class="footer-company">AI BISTRO, ra&#269;unalni&#353;ko programiranje d.o.o.</p>
-    <p class="footer-legal">
-        &copy; 2026 AI BISTRO d.o.o.
-        <span>|</span>
-        Mat. &#353;t.: 7420412000
-        <span>|</span>
-        DDV: SI70936234
-        <span>|</span>
-        Cesta v Lipovce 3B, 1358 Log pri Brezovici
-    </p>
+    <p class="mct-line">AI BISTRO d.o.o. ist eine Microsoft Certified Training-Organisation. Registriert in Slowenien. KI-Lieferung mit EU-Sitz.</p>
+    <p class="legal">AI BISTRO d.o.o. · Mat. št. 7420412000 · DDV SI70936234 · Cesta v Lipovce 3B, 1358 Log pri Brezovici · &copy; 2026</p>
 </footer>
 
 </body>

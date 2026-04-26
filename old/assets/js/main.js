@@ -1,3 +1,9 @@
+// Scroll-based nav styling
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
 // Reveal animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -20,6 +26,7 @@ if (hamburger && navLinks) {
         document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
     });
 
+    // Close mobile menu when a nav link is clicked
     navLinks.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('open');
@@ -29,39 +36,16 @@ if (hamburger && navLinks) {
     });
 }
 
-// Smooth anchor scrolling. Quote-button anchors carry ?offer=slug — strip it,
-// scroll to #contact, and pre-select the matching dropdown option.
+// Smooth anchor scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        const [hash, query] = href.split('?');
-        if (!hash) return;
-        const target = document.querySelector(hash);
-        if (!target) return;
         e.preventDefault();
-        if (query) {
-            const params = new URLSearchParams(query);
-            const offer = params.get('offer');
-            const sel = document.getElementById('offer-select');
-            if (offer && sel) {
-                const opt = Array.from(sel.options).find(o => o.value === offer);
-                if (opt) sel.value = offer;
-            }
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
-
-// Read ?offer= from the URL itself (e.g., when someone lands on /en/?offer=signature-dish)
-(() => {
-    const params = new URLSearchParams(window.location.search);
-    const offer = params.get('offer');
-    if (!offer) return;
-    const sel = document.getElementById('offer-select');
-    if (!sel) return;
-    const opt = Array.from(sel.options).find(o => o.value === offer);
-    if (opt) sel.value = offer;
-})();
 
 // Formspree AJAX submission with localized redirect
 const form = document.querySelector('form[action*="formspree.io"]');
