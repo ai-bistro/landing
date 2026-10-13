@@ -4,3 +4,5 @@
 __pycache__/
 .idea/
 CLAUDE.local.md
+# Local asset-generation scripts — GitHub Pages would serve them publicly
+/*.py
