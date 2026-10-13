@@ -1221,7 +1221,7 @@ section {
 /* Per-person crops — tuned so eye-line sits at ~35% from top of circle
    with similar face prominence across both portraits. */
 .team-photo .avatar.nadya {
-    background-image: url('../img/nadya.png');
+    background-image: url('../img/nadya.webp');
     background-size: 135%;
     background-position: 50% 25%;
 }
